@@ -13,7 +13,7 @@ public class Assignment2_3DArray {
         String[][][] data = {
                 { // Semester 1
                         {"Mathematics I", "Physics", "Chemistry", "Computer Programming", "Engineering Drawing", "Basic Electrical Eng."},
-                        {"78", "85", "91", "74", "88", "79"}
+                        {"78(Pass)", "85", "91", "74", "88", "79"}
                 },
                 { // Semester 2
                         {"Mathematics II", "Mechanics", "Environmental Sci.", "Basic Electronics", "Engineering Physics", "Engineering Graphics"},
@@ -37,7 +37,7 @@ public class Assignment2_3DArray {
         System.out.println("Semester 3, Subject 4: " + data[2][0][3]); // Operating Systems
         System.out.println("Semester 3, Subject 5: " + data[2][0][4]); // Signals and Systems
 
-        // Print marks of Semester 6, Subject 3 and Subject 6
+        // Print marks of Semester 5, Subject 3 and Subject 6
         System.out.println("Semester 5, Subject 3 Marks: " + data[4][1][2]); // Compiler Design - 84
         System.out.println("Semester 5, Subject 6 Marks: " + data[4][1][5]); // Computer Graphics - 90
 
