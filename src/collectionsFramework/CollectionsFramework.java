@@ -1,8 +1,17 @@
 package collectionsFramework;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class CollectionsFramework {
 	
@@ -104,6 +113,189 @@ public class CollectionsFramework {
 		empNamesLinkedList.remove("Bharath");
 		System.out.println("LinkedList size is :"+empNamesLinkedList.size());
 		System.out.println(empNamesLinkedList);
-	}
+		
+		
+	/*************HashSet*************/
+		
+		System.out.println("*************HashSet*************");
+		
+		//Syntax to Initialize/create: 	Set<DataType> variable = new HashSet<DataType>();
+		//Syntax to add data: variable.add(value);
+		//Syntax to remove the data:variable.remove(value);	
+		//Syntax to get the total value : variable.size();	
+			
+		//Order of Storing Values: Random Order
+		//Null Values : Allowed
+				
+		Set<String> empNamesHashSet = new HashSet<String>();	
+		empNamesHashSet.add("Teja");
+		empNamesHashSet.add("Afreen");
+		empNamesHashSet.add("Arayan");
+		empNamesHashSet.add("Bharath");
+		empNamesHashSet.add("Teja");
+		empNamesHashSet.add(null);
+		empNamesHashSet.remove("Bharath");
+		System.out.println("HashSet size is :"+empNamesHashSet.size());
+		System.out.println(empNamesHashSet);
+	
+		/************* LinkedHashSet *************/
+
+		System.out.println("*************LinkedHashSet*************");
+
+		//Syntax to Initialize/create: 	Set<DataType> variable = new LinkedHashSet<DataType>();
+		//Syntax to add data: variable.add(value);
+		//Syntax to remove the data:variable.remove(value);	
+		//Syntax to get the total value : variable.size();	
+
+		//Order of Storing Values: Insertion Order
+		//Null Values : Allowed
+
+		Set<String> empNamesLinkedHashSet = new LinkedHashSet<String>();
+		empNamesLinkedHashSet.add("Teja");
+		empNamesLinkedHashSet.add("Afreen");
+		empNamesLinkedHashSet.add("Arayan");
+		empNamesLinkedHashSet.add("Bharath");
+		empNamesLinkedHashSet.add("Teja");
+		empNamesLinkedHashSet.add(null);
+		empNamesLinkedHashSet.remove("Bharath");
+		System.out.println("LinkedHashSet size is :" + empNamesLinkedHashSet.size());
+		System.out.println(empNamesLinkedHashSet);
+		
+		/************* TreeSet *************/
+
+		System.out.println("*************TreeSet*************");
+
+		//Syntax to Initialize/create: 	Set<DataType> variable = new TreeSet<DataType>();
+		//Syntax to add data: variable.add(value);
+		//Syntax to remove the data:variable.remove(value);	
+		//Syntax to get the total value : variable.size();	
+
+		//Order of Storing Values: Ascending/ Alphabetical Order
+		//Null Values : Not Allowed
+
+		Set<String> empNamesTreeSet = new TreeSet<String>();
+		empNamesTreeSet.add("Teja");
+		empNamesTreeSet.add("Afreen");
+		empNamesTreeSet.add("Arayan");
+		empNamesTreeSet.add("Bharath");
+		empNamesTreeSet.add("Teja");
+//		empNamesTreeSet.add(null);
+		empNamesTreeSet.remove("Bharath");
+		System.out.println("TreeSet size is :" + empNamesTreeSet.size());
+		System.out.println(empNamesTreeSet);
+		
+		
+		/************* Map *************/
+		
+		// Wrapper Classes
+
+		System.out.println("*************HashMap*************");
+
+		//Syntax to Initialize/create: 	Map<Key,Value> variable = new HashMap<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to remove the data:variable.remove(key);	
+		//Syntax to get the total value : variable.size();	
+		//Syntax to get the  value : variable.get(key);
+
+		//Order of Storing Values: Random Order
+		//Null Values :  Allowed
+		//Null Keys :  Allowed
+
+		Map<Integer,String> empNamesHashMap = new HashMap<Integer,String>();
+		empNamesHashMap.put(1,"Teja");
+		empNamesHashMap.put(2,"Afreen");
+		empNamesHashMap.put(3,"Arayan");
+		empNamesHashMap.put(4,"Bharath");
+		empNamesHashMap.put(4,"Basava");
+		empNamesHashMap.put(5,"Teja");
+		empNamesHashMap.put(6,null);
+		empNamesHashMap.put(null,"Aakash");
+		empNamesHashMap.remove(2);
+		System.out.println("HashMap size is :" + empNamesHashMap.size());
+		System.out.println(empNamesHashMap);
+		
+		System.out.println("*************LinkedHashMap*************");
+
+		//Syntax to Initialize/create: 	Map<Key,Value> variable = new LinkedHashMap<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to remove the data:variable.remove(key);	
+		//Syntax to get the total value : variable.size();	
+		//Syntax to get the  value : variable.get(key);
+
+		//Order of Storing Values: Insertion Order
+		//Null Values :  Allowed
+		//Null Keys :  Allowed
+
+		Map<Integer,String> empNamesLinkedHashMap = new LinkedHashMap<Integer,String>();
+		empNamesLinkedHashMap.put(1,"Teja");
+		empNamesLinkedHashMap.put(2,"Afreen");
+		empNamesLinkedHashMap.put(3,"Arayan");
+		empNamesLinkedHashMap.put(4,"Bharath");
+		empNamesLinkedHashMap.put(4,"Basava");
+		empNamesLinkedHashMap.put(5,"Teja");
+		empNamesLinkedHashMap.put(6,null);
+		empNamesLinkedHashMap.put(null,"Aakash");
+		empNamesLinkedHashMap.remove(2);
+		System.out.println("LinkedHashMap size is :" + empNamesLinkedHashMap.size());
+		System.out.println(empNamesLinkedHashMap);
+		
+		System.out.println("*************TreeMap*************");
+
+		//Syntax to Initialize/create: 	Map<Key,Value> variable = new TreeMap<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to remove the data:variable.remove(key);	
+		//Syntax to get the total value : variable.size();	
+		//Syntax to get the  value : variable.get(key);
+
+		//Order of Storing Values: Ascending Order
+		//Null Values :  Allowed
+		//Null Keys :  Not Allowed
+
+		Map<Integer,String> empNamesTreeMap = new TreeMap<Integer,String>();
+		empNamesTreeMap.put(1,"Teja");
+		empNamesTreeMap.put(2,"Afreen");
+		empNamesTreeMap.put(3,"Arayan");
+		empNamesTreeMap.put(4,"Bharath");
+		empNamesTreeMap.put(4,"Basava");
+		empNamesTreeMap.put(5,"Teja");
+		empNamesTreeMap.put(6,null);
+//		empNamesTreeMap.put(null,"Aakash");
+		empNamesTreeMap.remove(2);
+		System.out.println("TreeMap size is :" + empNamesTreeMap.size());
+		System.out.println(empNamesTreeMap);
+		
+		//*************Hashtable*************"
+		
+		System.out.println("*************Hashtable*************");
+
+		//Syntax to Initialize/create: 	Map<Key,Value> variable = new Hashtable<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to remove the data:variable.remove(key);	
+		//Syntax to get the total value : variable.size();	
+		//Syntax to get the  value : variable.get(key);
+
+		//Order of Storing Values: Ascending Order
+		//Null Values : Not Allowed
+		//Null Keys :  Not Allowed
+
+		Map<Integer,String> empNamesHashtable = new Hashtable<Integer,String>();
+		empNamesHashtable.put(1,"Teja");
+		empNamesHashtable.put(2,"Afreen");
+		empNamesHashtable.put(3,"Arayan");
+		empNamesHashtable.put(4,"Bharath");
+		empNamesHashtable.put(4,"Basava");
+		empNamesHashtable.put(5,"Teja");
+//		empNamesHashtable.put(6,null);
+//		empNamesHashtable.put(null,"Aakash");
+		empNamesHashtable.remove(2);
+		System.out.println("Hashtable size is :" + empNamesHashtable.size());
+		System.out.println(empNamesHashtable);
+		
+		
+}
+	
+	
+	
+	
 
 }
