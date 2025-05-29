@@ -6,7 +6,7 @@ public class DataTypes {
 		
 		byte marks = 127;
 		
-		int empId = 2546787;
+		int empId1 = 2546787;
 		
 		long phone = 9553220022L;
 		
