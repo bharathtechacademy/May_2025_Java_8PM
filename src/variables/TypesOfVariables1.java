@@ -13,14 +13,6 @@ public class TypesOfVariables1 {
 	
 	static String topic3 = "Java"; // Static/Global variable
 	
-	int c;
-	
-	public  void test() {
-		int a= 5;
-		int b =10;
-		c= a+b;
-	}
-	
 	public static void main(String[] args) {		
 		String topic1 = "Selenium";		//Local Variable
 		System.out.println(topic1);
