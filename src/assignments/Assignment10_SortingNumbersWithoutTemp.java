@@ -20,13 +20,13 @@ public class Assignment10_SortingNumbersWithoutTemp {
                     // Swapping without using a temp variable using arithmetic operations
                     // Let's say array[i] = a and array[j] = b
                     // Step 1: a = a + b
-                    array[i] = array[i] + array[j];
+                    array[i] = array[i] + array[j];// 0 index ==>12+34 ==46
 
-                    // Step 2: b = a - b => (a + b) - b = a
-                    array[j] = array[i] - array[j];
+                    // Step 2: b = a - b => (a + b) - b = a  //
+                    array[j] = array[i] - array[j];// 1 index ==>46-34 =12
 
                     // Step 3: a = a - b => (a + b) - a = b
-                    array[i] = array[i] - array[j];
+                    array[i] = array[i] - array[j];// 0 index ==> 46-12 = 34
 
                     // After these 3 steps, values of array[i] and array[j] are swapped
                 }
