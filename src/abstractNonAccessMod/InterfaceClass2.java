@@ -24,5 +24,7 @@ public class InterfaceClass2 implements InterfaceClass1,InterfaceClass0{
 		// TODO Auto-generated method stub
 		
 	}
+	
+
 
 }

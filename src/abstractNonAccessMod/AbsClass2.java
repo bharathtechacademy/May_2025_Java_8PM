@@ -12,6 +12,4 @@ public class AbsClass2 extends AbsClass1{
 		System.out.println("Login Successful with"+user+","+pass);		
 	}
 
-
-
 }
