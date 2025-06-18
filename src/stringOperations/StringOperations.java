@@ -1,5 +1,8 @@
 package stringOperations;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class StringOperations {
 
 	public static void main(String[] args) {
@@ -60,13 +63,56 @@ public class StringOperations {
 		System.out.println(name.contains("Hara"));
 		System.out.println(name.startsWith("Bh"));
 		System.out.println(name.endsWith("h"));
-
-
-
-
+				
+		//Join the Strings together ==> String.concat("String");
+		System.out.println("Bharath".concat(" ").concat("Reddy"));
 		
+		//String is empty ? (not even white spaces) or Blank ? (white spaces allowed)
+		System.out.println("".isEmpty());
+		System.out.println(" ".isEmpty());
+		System.out.println(" ".isBlank());
 		
+		// String, StringBuffer, StringBuilder
 		
+		//String ==> immutable class
+		//StringBuffer ==> Mutable Class ==> Synchronized
+		//StringBuilder ==> Mutable Class ==> Non-Synchronized
+		
+		//String
+		String val = "Bharath";
+		val.concat(" Reddy");
+		System.out.println(val);
+		
+		//StringBuffer
+		StringBuffer sbf = new StringBuffer("Bharath");
+		sbf.append(" Reddy");
+		System.out.println(sbf);
+		
+		//StringBuilder
+		StringBuilder sbd = new StringBuilder("Bharath");
+		sbd.append(" Reddy");
+		System.out.println(sbd);
+		
+		//Type conversions & Type Casting
+		int stdCode = 144;
+		int phone = 345532;
+		String StdCode = String.valueOf(stdCode);
+		System.out.println(StdCode+phone);
+		
+		//String to Integer
+		String balace = " Account balance is : $9999.99 ";
+		balace =balace.replaceAll("[^0-9.]", "");
+		double Balance = Double.valueOf(balace);
+		if(Balance>=10000) {
+			System.out.println("Having minimum Balance");
+		}else {
+			System.out.println("Not having minimum Balance");
+		}
+	
+		//Converting time-stamp to String
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyyhhmmss");
+		String uniqueId = sdf.format(Calendar.getInstance().getTime());
+		System.out.println(uniqueId);
 	}
 
 }

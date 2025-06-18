@@ -20,6 +20,7 @@ public class Assignment16_CountWords {
 			// Check if the current word is "Java", ignoring case (e.g., "java", "JAVA", etc.)
 			// Also remove punctuation like '.', ',' from word if present
 			String word = words[i].replaceAll("[^a-zA-Z]", ""); // remove punctuation
+			
 			if (word.equalsIgnoreCase("Java")) {
 				System.out.println("Java word is present in Array with Index: " + i);
 				count++; // Increment the count for each match
