@@ -15,15 +15,12 @@ public class ExceptionHandling {
 	// 2. try/catch exception handling ==> when we are not sure about the exception
 	// 3. throw an custom exception ==> when there is no exception, create one 
 
-	public static void main(String[] args) throws InterruptedException, FileNotFoundException{
-		
+	public static void main(String[] args) throws InterruptedException, FileNotFoundException{		
 		System.out.println("Bharath");
 		Thread.sleep(2000);
 		System.out.println("ABC");
 		Thread.sleep(3000);
 		System.out.println("XYZ");
-		
-
 	}
 
 }

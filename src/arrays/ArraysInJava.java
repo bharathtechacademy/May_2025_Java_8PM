@@ -27,6 +27,7 @@ public class ArraysInJava {
 //		newEmpNames[4]="Apurva";
 		
 		System.out.println(newEmpNames[3]);
+		System.out.println(newEmpNames.length);
 		
 		
 
